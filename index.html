@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Pretty - Format & Validate JSON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JSON Pretty</h1>
+            <p>Format, validate, and beautify your JSON</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="section-header">
+                    <h2>Input</h2>
+                    <button id="clearBtn" class="btn btn-secondary">Clear</button>
+                </div>
+                <textarea id="input" placeholder='Paste your JSON here...'></textarea>
+            </div>
+
+            <div class="controls">
+                <button id="formatBtn" class="btn btn-primary">Format JSON</button>
+                <select id="indentSize">
+                    <option value="2" selected>2 spaces</option>
+                    <option value="4">4 spaces</option>
+                    <option value="tab">Tab</option>
+                </select>
+            </div>
+
+            <div class="output-section">
+                <div class="section-header">
+                    <h2>Output</h2>
+                    <div class="output-controls">
+                        <span id="status" class="status"></span>
+                        <button id="copyBtn" class="btn btn-secondary" disabled>Copy</button>
+                    </div>
+                </div>
+                <pre id="output" class="empty">Formatted JSON will appear here...</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
